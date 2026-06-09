@@ -2,7 +2,7 @@ region = "eu-north-1"
 
 cluster_name = "my-eks-cluster"
 
-kubernetes_version = "1.35"
+kubernetes_version = "1.36"
 
 vpc_cidr = "10.0.0.0/16"
 
