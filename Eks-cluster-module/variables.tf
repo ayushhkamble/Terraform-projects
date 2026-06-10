@@ -1,49 +1,39 @@
 variable "region" {
-  description = "AWS Region"
-  type        = string
+  type = string
 }
 
 variable "cluster_name" {
-  description = "EKS Cluster Name"
-  type        = string
+  type = string
 }
 
 variable "kubernetes_version" {
-  description = "Kubernetes version for EKS"
-  type        = string
+  type = string
 }
 
 variable "vpc_cidr" {
-  description = "VPC CIDR Block"
-  type        = string
+  type = string
 }
 
 variable "public_subnet_cidrs" {
-  description = "Public Subnet CIDRs"
-  type        = list(string)
+  type = list(string)
 }
 
 variable "private_subnet_cidrs" {
-  description = "Private Subnet CIDRs"
-  type        = list(string)
+  type = list(string)
 }
 
 variable "instance_types" {
-  description = "EKS Node Group Instance Types"
-  type        = list(string)
+  type = list(string)
 }
 
 variable "node_desired_size" {
-  description = "Desired Node Count"
-  type        = number
+  type = number
 }
 
 variable "node_min_size" {
-  description = "Minimum Node Count"
-  type        = number
+  type = number
 }
 
 variable "node_max_size" {
-  description = "Maximum Node Count"
-  type        = number
+  type = number
 }

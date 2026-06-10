@@ -6,10 +6,10 @@ output "cluster_endpoint" {
   value = module.eks.cluster_endpoint
 }
 
-output "region" {
-  value = var.region
+output "public_subnet_ids" {
+  value = module.vpc.public_subnet_ids
 }
 
-output "kubeconfig_command" {
-  value = "aws eks update-kubeconfig --region ${var.region} --name ${module.eks.cluster_name}"
+output "node_group_name" {
+  value = module.nodegroup.node_group_name
 }
